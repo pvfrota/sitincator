@@ -21,7 +21,7 @@ export default class EventDuration extends Component {
     return (
       <p className="event-duration">
         {isAllDay ?
-          'All Day Event' :
+          'O dia inteiro' :
           `${startTime.format("H:mm")} - ${endTime.format("H:mm")}`
         }
       </p>

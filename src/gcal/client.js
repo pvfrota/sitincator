@@ -36,8 +36,8 @@ module.exports = class Client {
     const now = new Date();
     return new Promise((resolve, reject) => {
       const resource = {
-        summary: `Quick Reservation ${duration}'`,
-        description: `Quick Reservation ${duration}'`,
+        summary: `Reserva rápida ${duration} minutos`,
+        description: `Reservado por ${duration} minutos através do totem`,
         start: {
           dateTime: now.toISOString(),
         },

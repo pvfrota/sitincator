@@ -43,7 +43,7 @@ export const timeLeft = (event) => {
 
 export const humanReadableDuration = (ms) => {
   // largest: max number of units to display, round: round to smallest unit displayed
-  return humanizeDuration(ms, { largest: 1, round: true, units: ['d', 'h', 'm'] });
+  return humanizeDuration(ms, { language: 'pt', largest: 1, round: true, units: ['d', 'h', 'm'] });
 };
 
 export const isCurrent = (event) => {

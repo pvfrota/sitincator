@@ -48,7 +48,7 @@ export default class EventDetails extends Component {
       return (
         <div className='event-details flex-container'>
           <h3 className="event-details-status">
-            {'NO UPCOMING EVENTS'}
+            {'SEM EVENTOS PRÓXIMOS'}
           </h3>
         </div>
       );
@@ -64,7 +64,7 @@ export default class EventDetails extends Component {
       <div className='event-details flex-container'>
         <Button icon="arrow-up" className={btnClasses} handleClick={this.handleExpandDetails.bind(this)}/>
         <h3 className="event-details-status">
-          {isCurrent ? 'CURRENT MEETING' : 'COMING UP'}
+          {isCurrent ? 'REUNIÃO ATUAL' : 'A SEGUIR'}
         </h3>
         <h3 className="event-details-name">{event.summary}</h3>
         <EventDuration event={event} />

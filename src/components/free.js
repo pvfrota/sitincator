@@ -6,7 +6,7 @@ import { MILLISECONDS_PER_MINUTE } from './../constants';
 
 const freeStatusSubMessage = (nextEvent) => {
   const remainingTime = humanReadableDuration(timeToEvent(nextEvent));
-  return `for the next ${remainingTime}`;
+  return `pelos próximos ${remainingTime}`;
 };
 
 const lessThan15MinutesToEvent = (event) => {
@@ -23,7 +23,7 @@ const Free = ({ nextEvent, onClick15, onClick30}) => {
   return (
     <div className='status-details' key={1}>
       <strong> { remote.getGlobal('calendarName') }</strong>
-      <h3>Quick Booking</h3>
+      <h3>Reserva rápida</h3>
       <div className="action-buttons multiple">
         <Button
           icon="15-min"
@@ -36,7 +36,7 @@ const Free = ({ nextEvent, onClick15, onClick30}) => {
           className={lessThan30MinutesToEvent(nextEvent) ? 'hidden' : '' }
         />
       </div>
-      <h1>{"It's free"}</h1>
+      <h1>{"Livre"}</h1>
       <h2>{remainingTimeMessage}</h2>
     </div>
   );

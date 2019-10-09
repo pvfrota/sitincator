@@ -111,8 +111,8 @@ export default class App extends Component {
   render() {
     const { events } = this.state;
     const footerText = isStatusView() ?
-      <span>full schedule <i className="icon icon-arrow-right"></i></span> :
-      <span><i className="icon icon-arrow-left"></i> back to booking</span>;
+      <span>Agenda completa <i className="icon icon-arrow-right"></i></span> :
+      <span><i className="icon icon-arrow-left"></i> Voltar para reserva</span>;
 
     return (
       <div id="app">
